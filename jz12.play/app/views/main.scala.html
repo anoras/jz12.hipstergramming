@@ -1,0 +1,26 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script>window.JSON || document.write('<script src="@routes.Assets.at("javascript/json2.js")">\x3C/script>');</script>
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/uuid.js")"></script>
+        <script src="@routes.Assets.at("javascripts/sockjs-0.3.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/vertxbus.js")"></script>
+        <script src="@routes.Assets.at("javascripts/underscore.js")"></script>
+        <script src="@routes.Assets.at("javascripts/backbone.js")"></script>
+        <script src="@routes.Assets.at("javascripts/backbone.support.js")"></script>
+        <script src="@routes.Assets.at("javascripts/backbone-forms.js")"></script>
+        <script src="@routes.Assets.at("javascripts/handlebars-1.0.0.beta6.js")"></script>
+        <script src="@routes.Assets.at("javascripts/templates.js")"></script>
+        <script src="@routes.Assets.at("javascripts/app.js")"></script>
+    </head>
+    <body>
+        @content
+    </body>
+</html>

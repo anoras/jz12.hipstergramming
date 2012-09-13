@@ -1,0 +1,14 @@
+@(boostrapData: String)
+
+@main("Super-awesome app") {
+    <div class="container">
+        <header>
+            <h1>Awesome contact manager</h1>
+        </header>
+        <div id="app" class="row">
+        </div>
+    </div>
+    <script type="application/json" id="contacts-data">
+        @Html(boostrapData)
+    </script>
+}
